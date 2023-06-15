@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="endGamePopup" maxHeight="200.0" maxWidth="200.0" prefHeight="200.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isep.sixquiprend.GUI.EndGamePopupController">
+    <ImageView fx:id="endGameBackgroundImage" fitHeight="200" fitWidth="200" pickOnBounds="true" preserveRatio="false">
+        <image>
+            <Image url="@../images/scene/WinPopup.png" />
+        </image>
+    </ImageView>
+   <Label fx:id="announcementLabel" alignment="CENTER" layoutX="34.0" layoutY="27.0" prefHeight="47.0" prefWidth="131.0" text="You win!" textAlignment="CENTER" textFill="WHITE">
+      <font>
+         <Font name="Jokerman" size="28.0" />
+      </font>
+   </Label>
+   <Button fx:id="newGameButton" layoutX="54.0" layoutY="113.0" mnemonicParsing="false" onAction="#onButtonClick" prefHeight="33.0" prefWidth="92.0" style="-fx-background-color: #18aaf3;" text="New game" textFill="WHITE">
+      <font>
+         <Font name="Verdana" size="12.0" />
+      </font>
+      <effect>
+         <InnerShadow blurType="GAUSSIAN" height="40.0" radius="19.5" width="40.0">
+            <color>
+               <Color red="0.3843137323856354" green="0.0941176488995552" blue="0.9529411792755127" />
+            </color>
+         </InnerShadow>
+      </effect>
+   </Button>
+   <Label fx:id="rankingLabel" alignment="CENTER" layoutX="34.0" layoutY="75.0" prefHeight="25.0" prefWidth="131.0" text="Ranking : " textAlignment="CENTER" textFill="WHITE">
+      <font>
+         <Font name="Yu Gothic Medium" size="18.0" />
+      </font>
+   </Label>
+   <Button fx:id="quitButton" layoutX="70.0" layoutY="154.0" mnemonicParsing="false" onAction="#onButtonClick" prefHeight="25.0" prefWidth="59.0" style="-fx-background-color: #9733f7;" text="Quit" textFill="WHITE">
+      <font>
+         <Font name="Verdana" size="12.0" />
+      </font>
+      <effect>
+         <InnerShadow blurType="GAUSSIAN" height="40.0" radius="19.5" width="40.0">
+            <color>
+               <Color red="0.08757634460926056" green="0.01031189039349556" blue="0.24210526049137115" />
+            </color>
+         </InnerShadow>
+      </effect>
+   </Button>
+</AnchorPane>

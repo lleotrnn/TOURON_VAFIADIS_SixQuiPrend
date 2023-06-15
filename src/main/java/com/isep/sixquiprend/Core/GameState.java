@@ -1,0 +1,5 @@
+package com.isep.sixquiprend.Core;
+
+public enum GameState {
+    WAITING_FOR_PLAYERS,STARTING,WAITING_FOR_CARD_PICK,WAITING_FOR_ROW_PICK,PLAYING,NEXT_ROUND,END;
+}
